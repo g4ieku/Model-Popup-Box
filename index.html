@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Model Popup Box</title>
+      <!-- CSS Link -->
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <button id="btn" onclick="toggle()" class="btn">POPUP</button>
+      </div>
+
+      <!-- Start| Popup Container -->
+      <div class="popup-container">
+         <div class="popup">
+            <h3>How do you like my services?🚀</h3>
+            <input type="radio" name="buttons" id="btn1" />
+            <input type="radio" name="buttons" id="btn2" />
+            <input type="radio" name="buttons" id="btn3" />
+            <input type="radio" name="buttons" id="btn4" />
+            <input type="radio" name="buttons" id="btn5" />
+            <div class="icons">
+               <label for="btn1">👎</label>
+               <label for="btn2">😐</label>
+               <label for="btn3">👍</label>
+               <label for="btn4">⭐</label>
+               <label for="btn5">💘</label>
+            </div>
+            <input type="submit" value="SUBMIT" class="btn" />
+            <div id="close" onclick="toggle()">❌</div>
+         </div>
+      </div>
+      <!-- Ends| Popup Container -->
+
+      <!-- JavaScipt -->
+      <script>
+         const toggle = () => {
+            let toggle = document.querySelector(".popup-container");
+            toggle.classList.toggle("toggle");
+         };
+      </script>
+   </body>
+</html>
